@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { Typography, IconButton, Button } from "@material-tailwind/react";
 
-const LINKS = ["About Us", "Careers", "Press", "Blog", "Pricing"];
+const LINKS = ["Home","About","Contact Us"];
 const CURRENT_YEAR = new Date().getFullYear();
 
 export function Footer() {
@@ -18,10 +18,10 @@ export function Footer() {
               color="white"
               className="mb-4"
             >
-              Material Tailwind
+              PawBacker
             </Typography>
             <Typography color="white" className="mb-12 font-normal">
-              The reward for getting on the stage is fame.
+              Helping pet parents find trusted, loving sitters anytime, anywhere
             </Typography>
             <ul className="flex flex-wrap items-center justify-center md:justify-start">
               {LINKS.map((link, idx) => (
@@ -52,7 +52,7 @@ export function Footer() {
                 <Image
                   width={256}
                   height={256}
-                  src="/NextJS-Tailwind-App-Presentation-Page/logos/logo-apple.png"
+                  src="/logos/logo-apple.png"
                   className="-mt-0.5 mr-2 h-6 w-6"
                   alt="ios"
                 />
@@ -65,7 +65,7 @@ export function Footer() {
                 <Image
                   width={256}
                   height={256}
-                  src="/NextJS-Tailwind-App-Presentation-Page/logos/logo-google.png"
+                  src="/logos/logo-google.png"
                   className="-mt-0.5 mr-2 h-6 w-6"
                   alt="ios"
                 />
@@ -79,19 +79,7 @@ export function Footer() {
             color="white"
             className="text-center font-normal opacity-75"
           >
-            &copy; {CURRENT_YEAR} Made with{" "}
-            <a>
-              Material Tailwind
-            </a>{" "}
-            by{" "}
-            <a href="https://www.creative-tim.com" target="_blank">
-              Creative Tim
-            </a>
-            <a>{" "} |{" "}
-              Distributed by{" "}
-              <a href="https://themewagon.com/" target="_blank" >ThemeWagon</a>
-            </a>
-            .
+            © {CURRENT_YEAR} PawBacker. All rights reserved.
           </Typography>
 
           <div className="flex gap-2">
@@ -99,16 +87,10 @@ export function Footer() {
               <i className="fa-brands fa-twitter text-2xl not-italic opacity-75"></i>
             </IconButton>
             <IconButton variant="text" color="white">
-              <i className="fa-brands fa-linkedin text-2xl not-italic opacity-75"></i>
+              <i className="fa-brands fa-instagram text-2xl not-italic opacity-75"></i>
             </IconButton>
             <IconButton variant="text" color="white">
               <i className="fa-brands fa-facebook text-2xl not-italic opacity-75"></i>
-            </IconButton>
-            <IconButton variant="text" color="white">
-              <i className="fa-brands fa-github text-2xl not-italic opacity-75"></i>
-            </IconButton>
-            <IconButton variant="text" color="white">
-              <i className="fa-brands fa-dribbble text-2xl not-italic opacity-75"></i>
             </IconButton>
           </div>
         </div>

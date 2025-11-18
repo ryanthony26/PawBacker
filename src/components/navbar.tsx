@@ -73,7 +73,7 @@ export function Navbar() {
           variant="h6"
           color={isScrolling ? "gray" : "white"}
         >
-          Material Tailwind
+          PawBacker
         </Typography>
         <ul
           className={`ml-10 hidden items-center gap-6 lg:flex ${
@@ -81,11 +81,8 @@ export function Navbar() {
           }`}
         >
           <NavItem>Home</NavItem>
-          <NavItem>About Us</NavItem>
+          <NavItem>About</NavItem>
           <NavItem>Contact Us</NavItem>
-          <NavItem>
-            Docs
-          </NavItem>
         </ul>
         <div className="hidden gap-2 lg:flex lg:items-center">
           <IconButton
@@ -109,9 +106,9 @@ export function Navbar() {
           >
             <i className="fa-brands fa-instagram text-base" />
           </IconButton>
-          <a href="#!">
-            <Button color={isScrolling ? "gray" : "white"} size="sm">
-              Blocks
+          <a href="#">
+            <Button color={isScrolling ? "gray" : "white"} size="sm" className="normal-case">
+              Get Started!
             </Button>
           </a>
         </div>
@@ -148,9 +145,9 @@ export function Navbar() {
             <IconButton variant="text" color="gray" size="sm">
               <i className="fa-brands fa-instagram text-base" />
             </IconButton>
-            <a href="#!">
+            <a href="#">
               <Button color="gray" size="sm" className="ml-auto">
-                Blocks
+                Get Started!
               </Button>
             </a>
           </div>
