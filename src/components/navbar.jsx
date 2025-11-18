@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import {
   Navbar as MTNavbar,
@@ -8,11 +10,7 @@ import {
 } from "@material-tailwind/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
-interface NavItemProps {
-  children: React.ReactNode;
-  href?: string;
-}
-function NavItem({ children, href }: NavItemProps) {
+function NavItem({ children, href }) {
   return (
     <li>
       <Typography
@@ -37,19 +35,14 @@ export function Navbar() {
   }
 
   React.useEffect(() => {
-    window.addEventListener(
-      "resize",
-      () => window.innerWidth >= 960 && setOpen(false)
-    );
+    const onResize = () => window.innerWidth >= 960 && setOpen(false);
+    window.addEventListener("resize", onResize);
+    return () => window.removeEventListener("resize", onResize);
   }, []);
 
   React.useEffect(() => {
     function handleScroll() {
-      if (window.scrollY > 0) {
-        setIsScrolling(true);
-      } else {
-        setIsScrolling(false);
-      }
+      setIsScrolling(window.scrollY > 0);
     }
 
     window.addEventListener("scroll", handleScroll);
@@ -69,7 +62,7 @@ export function Navbar() {
         <Typography
           as="a"
           href="#!"
-        //   target="_blank"
+          // target="_blank"
           variant="h6"
           color={isScrolling ? "gray" : "white"}
         >
@@ -107,7 +100,11 @@ export function Navbar() {
             <i className="fa-brands fa-instagram text-base" />
           </IconButton>
           <a href="#">
-            <Button color={isScrolling ? "gray" : "white"} size="sm" className="normal-case">
+            <Button
+              color={isScrolling ? "gray" : "white"}
+              size="sm"
+              className="normal-case"
+            >
               Get Started!
             </Button>
           </a>
@@ -131,9 +128,7 @@ export function Navbar() {
             <NavItem>Home</NavItem>
             <NavItem>About Us</NavItem>
             <NavItem>Contact Us</NavItem>
-            <NavItem>
-              Docs
-            </NavItem>
+            <NavItem>Docs</NavItem>
           </ul>
           <div className="mt-4 flex items-center gap-2">
             <IconButton variant="text" color="gray" size="sm">
@@ -146,7 +141,7 @@ export function Navbar() {
               <i className="fa-brands fa-instagram text-base" />
             </IconButton>
             <a href="#">
-              <Button color="gray" size="sm" className="ml-auto">
+              <Button color="gray" size="sm" className="ml-auto normal-case">
                 Get Started!
               </Button>
             </a>

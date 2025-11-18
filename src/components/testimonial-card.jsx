@@ -1,19 +1,7 @@
 import React from "react";
 import { Typography, Card, CardBody, Avatar } from "@material-tailwind/react";
 
-interface TestimonialCardProps {
-  img: string;
-  feedback: string;
-  client: string;
-  title: string;
-}
-
-export function TestimonialCard({
-  img,
-  feedback,
-  client,
-  title,
-}: TestimonialCardProps) {
+export function TestimonialCard({ img, feedback, client, title }) {
   return (
     <Card shadow={false} className="items-center text-center">
       <CardBody>

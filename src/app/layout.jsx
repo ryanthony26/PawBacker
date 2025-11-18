@@ -1,5 +1,4 @@
 import "./globals.css";
-import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import { FixedPlugin, Layout } from "@/components";
 
@@ -9,17 +8,13 @@ const roboto = Roboto({
   display: "swap",
 });
 
-export const metadata: Metadata = {
+export const metadata = {
   title: "PawBacker",
   description:
     "We are thrilled to offer you a Free App Presentation Template, a beautifully designed and user-friendly Tailwind CSS and Material Tailwind theme crafted specifically for app developers like you. The free app presentation template includes key features such as hero, features, FAQ, stats, and testimonial sections.",
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
@@ -32,6 +27,7 @@ export default function RootLayout({
         />
         <link rel="shortcut icon" href="/favicon.png" type="image/png" />
       </head>
+
       <body className={roboto.className}>
         <Layout>
           {children}
