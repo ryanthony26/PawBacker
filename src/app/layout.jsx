@@ -1,7 +1,7 @@
 import "./globals.css";
 import { Roboto } from "next/font/google";
-import { FixedPlugin, Layout } from "@/components";
-
+import FixedPlugin from "@/components/fixed-plugin";
+import Layout from "@/components/layout";
 const roboto = Roboto({
   subsets: ["latin"],
   weight: ["300", "400", "500", "700", "900"],

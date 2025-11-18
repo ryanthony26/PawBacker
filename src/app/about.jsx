@@ -64,7 +64,7 @@ export function AboutUs() {
     <section className="py-20 px-10">
       <div className="grid grid-cols-1 lg:grid-cols-2 max-w-6xl mx-auto items-start lg:gap-5">
         <div className="col-span-1 mx-auto px-4 lg:px-0">
-          <Typography variant="h2" color="blue-gray" className="mb-4" as any>
+          <Typography variant="h2" color="blue-gray" className="mb-4">
             Get to Know Us
           </Typography>
           <Typography
