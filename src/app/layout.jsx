@@ -10,7 +10,7 @@ const roboto = Roboto({
 export const metadata = {
   title: "PawBacker",
   description:
-    "We are thrilled to offer you a Free App Presentation Template, a beautifully designed and user-friendly Tailwind CSS and Material Tailwind theme crafted specifically for app developers like you. The free app presentation template includes key features such as hero, features, FAQ, stats, and testimonial sections.",
+    "PawBacker is a trusted platform that connects pet owners with reliable, verified sitters. From convenient booking to real-time communication, we make pet care simple, safe, and stress-free—because your pets deserve the best every time you’re away",
 };
 
 export default function RootLayout({ children }) {
