@@ -36,7 +36,7 @@ export function Testimonials() {
     <section className="px-10 !py-20">
       <div className="container mx-auto">
         <div className="mb-10 flex w-full flex-col items-center">
-          <div className="mb-10 flex h-20 w-20 items-center justify-center rounded-lg bg-gray-900 text-white ">
+          <div className="mb-10 flex h-20 w-20 items-center justify-center rounded-lg bg-main text-white ">
             <UserIcon className="h-6 w-6" />
           </div>
           <Typography variant="h2" color="blue-gray" className="mb-2">

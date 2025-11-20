@@ -5,9 +5,9 @@ export function FeatureCard({ icon: Icon, title, children }) {
   return (
     <Card color="transparent" shadow={false}>
       <CardBody className="grid justify-start">
-        <div className="mb-4 grid h-12 w-12 place-content-center rounded-lg bg-gray-900 p-2.5 text-left text-white">
+        <div className="mb-4 grid h-16 w-16 place-content-center rounded-lg bg-main p-2.5 text-left text-white">
           {/* Icon is a React component passed via the `icon` prop */}
-          <Icon className="h-6 w-6" />
+          <Icon className="h-8 w-10" />
         </div>
 
         <Typography variant="h5" color="blue-gray" className="mb-2">

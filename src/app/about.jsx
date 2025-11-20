@@ -61,7 +61,7 @@ export function AboutUs() {
 
   const handleOpen = (value) => setOpen(open === value ? 0 : value);
   return (
-    <section className="py-20 px-10">
+    <section id="about" className="py-20 px-10">
       <div className="grid grid-cols-1 lg:grid-cols-2 max-w-6xl mx-auto items-start lg:gap-5">
         <div className="col-span-1 mx-auto px-4 lg:px-0">
           <Typography variant="h2" color="blue-gray" className="mb-4">
@@ -89,8 +89,8 @@ export function AboutUs() {
               icon={<Icon id={item.id} open={open} />}
             >
               <AccordionHeader
-                className={`text-[#263238] transition-colors ${
-                  open === item.id ? "text-[#7738F4] hover:!text-[#7738F4]" : ""
+                className={`text-lg text-[#263238] hover:text-main transition-colors ${
+                  open === item.id ? "text-main hover:!text-main" : ""
                 }`}
                 onClick={() => handleOpen(item.id)}
               >
