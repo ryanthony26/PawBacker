@@ -9,6 +9,7 @@ import {
   Button,
 } from "@material-tailwind/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import Image from "next/image";
 
 function NavItem({ children, href }) {
   return (
@@ -16,8 +17,8 @@ function NavItem({ children, href }) {
       <Typography
         as="a"
         href={href || "#"}
-        target={href ? "_blank" : "_self"}
-        variant="small"
+        target={href}
+        variant="medium"
         className="font-medium"
       >
         {children}
@@ -59,51 +60,62 @@ export function Navbar() {
       className="fixed top-0 z-50 border-0"
     >
       <div className="container mx-auto flex items-center justify-between">
-        <Typography
-          as="a"
-          href="#!"
-          // target="_blank"
-          variant="h6"
-          color={isScrolling ? "gray" : "white"}
-        >
-          PawBacker
-        </Typography>
+        <div className="flex items-center justify-start">
+          <Image
+            width={256}
+            height={256}
+            src={isScrolling ? "/logos/logo-black.png" : "/logos/logo.png"}
+            className={`w-14 h-14 ${isScrolling ? "" : "text-white"}`}
+            alt="pawbacker_logo"
+          />
+          <Typography
+            as="a"
+            href="#"
+            // target="_blank"
+            variant="h6"
+            className={`${isScrolling ? "text-gray-900" : "text-white"}`}
+          >
+            PawBacker
+          </Typography>
+        </div>
+
         <ul
           className={`ml-10 hidden items-center gap-6 lg:flex ${
             isScrolling ? "text-gray-900" : "text-white"
           }`}
         >
           <NavItem>Home</NavItem>
-          <NavItem>About</NavItem>
+          <NavItem href="#about">About</NavItem>
           <NavItem>Contact Us</NavItem>
         </ul>
         <div className="hidden gap-2 lg:flex lg:items-center">
           <IconButton
             variant="text"
-            color={isScrolling ? "gray" : "white"}
-            size="sm"
+            className={`${isScrolling ? "text-gray-900" : "text-white"}`}
+            size="md"
           >
             <i className="fa-brands fa-twitter text-base" />
           </IconButton>
           <IconButton
             variant="text"
-            color={isScrolling ? "gray" : "white"}
-            size="sm"
+            className={`${isScrolling ? "text-gray-900" : "text-white"}`}
+            size="md"
           >
             <i className="fa-brands fa-facebook text-base" />
           </IconButton>
           <IconButton
             variant="text"
-            color={isScrolling ? "gray" : "white"}
-            size="sm"
+            className={`${isScrolling ? "text-gray-900" : "text-white"}`}
+            size="md"
           >
             <i className="fa-brands fa-instagram text-base" />
           </IconButton>
           <a href="#">
             <Button
-              color={isScrolling ? "gray" : "white"}
-              size="sm"
-              className="normal-case"
+              className={`normal-case text-sm ${
+                isScrolling ? "bg-gray-900 text-white" : "bg-white text-gray-900"
+              }`}
+              size="md"
             >
               Get Started!
             </Button>
