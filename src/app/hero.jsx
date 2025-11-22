@@ -3,7 +3,6 @@
 import Image from "next/image";
 import { Button, Typography } from "@material-tailwind/react";
 
-
 function Hero() {
   return (
     <div className="relative min-h-screen w-full">
@@ -17,37 +16,53 @@ function Hero() {
               variant="lead"
               className="mb-7 !text-white md:pr-16 xl:pr-28"
             >
-              PawBacker makes it easy to find trusted sitters, schedule visits, and stay connected.
+              PawBacker makes it easy to find trusted sitters, schedule visits,
+              and stay connected.
             </Typography>
             <div className="flex flex-col gap-2 md:mb-2 md:w-10/12 md:flex-row">
-              <Button
-                size="lg"
-                color="white"
-                className="flex justify-center items-center gap-3"
+              <a
+                href="https://www.apple.com/id/app-store/" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="md:w-auto w-full"
               >
-                <Image
-                  width={256}
-                  height={256}
-                  src="/logos/logo-apple.png"
-                  alt="metamask"
-                  className="w-6 h-6"
-                />
-                App Store
-              </Button>
-              <Button
-                size="lg"
-                color="white"
-                className="flex justify-center items-center gap-3"
+                <Button
+                  size="lg"
+                  color="white"
+                  className="flex justify-center items-center gap-3"
+                >
+                  <Image
+                    width={256}
+                    height={256}
+                    src="/logos/logo-apple.png"
+                    alt="metamask"
+                    className="w-6 h-6"
+                  />
+                  App Store
+                </Button>
+              </a>
+
+              <a
+                href="https://play.google.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="md:w-auto w-full"
               >
-                <Image
-                  width={256}
-                  height={256}
-                  src="/logos/logo-google.png"
-                  alt="metamask"
-                  className="w-6 h-6"
-                />
-                Google Play
-              </Button>
+                <Button
+                  size="lg"
+                  color="white"
+                  className="flex justify-center items-center gap-3"
+                >
+                  <Image
+                    width={256}
+                    height={256}
+                    src="/logos/logo-google.png"
+                    alt="metamask"
+                    className="w-6 h-6"
+                  />
+                  Google Play
+                </Button>
+              </a>
             </div>
           </div>
           <Image
@@ -62,13 +77,15 @@ function Hero() {
       <div className="mx-8 lg:mx-16 -mt-24 rounded-xl bg-white p-5 md:p-14 shadow-md">
         <div>
           <Typography variant="h3" color="blue-gray" className="mb-3">
-          Your Pet Deserves the Best Care
+            Your Pet Deserves the Best Care
           </Typography>
           <Typography
             variant="paragraph"
             className="font-normal !text-gray-500 lg:w-5/12"
           >
-            Whether you're working late, traveling, or just need an extra hand, PawBacker connects you with verified sitters who treat your pets like their own.
+            Whether you're working late, traveling, or just need an extra hand,
+            PawBacker connects you with verified sitters who treat your pets
+            like their own.
           </Typography>
         </div>
       </div>

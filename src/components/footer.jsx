@@ -2,7 +2,10 @@
 import Image from "next/image";
 import { Typography, IconButton, Button } from "@material-tailwind/react";
 
-const LINKS = ["Home","About","Contact Us"];
+const LINKS = [
+  { label: "Home", id: "" },
+  { label: "About", id: "about" },
+];
 const CURRENT_YEAR = new Date().getFullYear();
 
 export function Footer() {
@@ -28,13 +31,13 @@ export function Footer() {
                 <li key={link}>
                   <Typography
                     as="a"
-                    href="#!"
+                    href={`#${link.id}`}
                     color="white"
                     className={`py-1 font-medium transition-colors ${
                       idx === 0 ? "pr-3" : "px-3"
                     }`}
                   >
-                    {link}
+                    {link.label}
                   </Typography>
                 </li>
               ))}
@@ -45,32 +48,46 @@ export function Footer() {
               Get the app
             </Typography>
             <div className="flex flex-col gap-2">
-              <Button
-                color="white"
-                className="flex items-center justify-center"
+              <a
+                href="https://www.apple.com/id/app-store/"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                <Image
-                  width={256}
-                  height={256}
-                  src="/logos/logo-apple.png"
-                  className="-mt-0.5 mr-2 h-6 w-6"
-                  alt="ios"
-                />
-                App Store
-              </Button>
-              <Button
-                color="white"
-                className="flex items-center justify-center"
+                <Button
+                  color="white"
+                  className="flex items-center justify-center w-full"
+                >
+                  <Image
+                    width={256}
+                    height={256}
+                    src="/logos/logo-apple.png"
+                    className="-mt-0.5 mr-2 h-6 w-6"
+                    alt="ios"
+                  />
+                  App Store
+                </Button>
+              </a>
+
+              <a
+                href="https://www.play.google.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="md:w-auto w-full"
               >
-                <Image
-                  width={256}
-                  height={256}
-                  src="/logos/logo-google.png"
-                  className="-mt-0.5 mr-2 h-6 w-6"
-                  alt="ios"
-                />
-                Google Play
-              </Button>
+                <Button
+                  color="white"
+                  className="flex items-center justify-center"
+                >
+                  <Image
+                    width={256}
+                    height={256}
+                    src="/logos/logo-google.png"
+                    className="-mt-0.5 mr-2 h-6 w-6"
+                    alt="ios"
+                  />
+                  Google Play
+                </Button>
+              </a>
             </div>
           </div>
         </div>

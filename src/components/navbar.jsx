@@ -17,7 +17,7 @@ function NavItem({ children, href }) {
       <Typography
         as="a"
         href={href || "#"}
-        target={href}
+        target="_self"
         variant="medium"
         className="font-medium"
       >
@@ -86,7 +86,6 @@ export function Navbar() {
         >
           <NavItem>Home</NavItem>
           <NavItem href="#about">About</NavItem>
-          <NavItem>Contact Us</NavItem>
         </ul>
         <div className="hidden gap-2 lg:flex lg:items-center">
           <IconButton
@@ -94,7 +93,7 @@ export function Navbar() {
             className={`${isScrolling ? "text-gray-900" : "text-white"}`}
             size="md"
           >
-            <i className="fa-brands fa-twitter text-base" />
+            <i className="fa-brands fa-twitter text-base"/>
           </IconButton>
           <IconButton
             variant="text"
@@ -138,9 +137,7 @@ export function Navbar() {
         <div className="container mx-auto mt-4 rounded-lg border-t border-blue-gray-50 bg-white px-6 py-5">
           <ul className="flex flex-col gap-4 text-blue-gray-900">
             <NavItem>Home</NavItem>
-            <NavItem>About Us</NavItem>
-            <NavItem>Contact Us</NavItem>
-            <NavItem>Docs</NavItem>
+            <NavItem>About</NavItem>
           </ul>
           <div className="mt-4 flex items-center gap-2">
             <IconButton variant="text" color="gray" size="sm">
