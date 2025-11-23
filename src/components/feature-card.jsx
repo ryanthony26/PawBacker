@@ -4,7 +4,7 @@ import { Typography, Card, CardBody } from "@material-tailwind/react";
 export function FeatureCard({ icon: Icon, title, children }) {
   return (
     <Card color="transparent" shadow={false}>
-      <CardBody className="grid justify-start">
+      <CardBody className="grid justify-start" data-aos="fade-up">
         <div className="mb-4 grid h-16 w-16 place-content-center rounded-lg bg-main p-2.5 text-left text-white">
           {/* Icon is a React component passed via the `icon` prop */}
           <Icon className="h-8 w-10" />

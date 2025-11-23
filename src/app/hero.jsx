@@ -13,17 +13,20 @@ function Hero() {
               variant="h1"
               color="white"
               className="mb-4"
+              data-aos="fade-up"
             >
               Find trusted, loving pet sitters anytime, anywhere.
             </Typography>
             <Typography
               variant="lead"
               className="mb-7 !text-white md:pr-16 xl:pr-28"
+              data-aos="fade-up"
+              data-aos-delay="300"
             >
               PawBacker makes it easy to find trusted sitters, schedule visits,
               and stay connected.
             </Typography>
-            <div className="flex flex-col gap-2 md:mb-2 md:w-10/12 md:flex-row">
+            <div className="flex flex-col gap-2 md:mb-2 md:w-10/12 md:flex-row" data-aos="fade-up" data-aos-delay="600">
               <a
                 href="https://www.apple.com/id/app-store/"
                 target="_blank"
@@ -78,12 +81,13 @@ function Hero() {
       </header>
       <div className="mx-8 lg:mx-16 -mt-24 rounded-xl bg-white p-5 md:p-14 shadow-md">
         <div>
-          <Typography variant="h3" color="blue-gray" className="mb-3">
+          <Typography variant="h3" color="blue-gray" className="mb-3" data-aos="fade-up">
             Trusted Care for Your Best Friend
           </Typography>
           <Typography
             variant="paragraph"
             className="font-normal !text-gray-500 lg:w-5/12"
+            data-aos="fade-up"
           >
             Whether you're working late, traveling, or just need an extra hand,
             PawBacker connects you with verified sitters who treat your pets

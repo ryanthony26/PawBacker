@@ -3,7 +3,7 @@ import { Typography, Card, CardBody, Avatar } from "@material-tailwind/react";
 
 export function TestimonialCard({ img, feedback, client, title }) {
   return (
-    <Card shadow={false} className="items-center text-center">
+    <Card shadow={false} className="items-center text-center" data-aos="fade-up">
       <CardBody>
         <Avatar src={img} className="mb-3" alt={client} size="lg" />
         <Typography variant="h6" color="blue-gray">

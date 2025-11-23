@@ -6,6 +6,7 @@ const roboto = Roboto({
   weight: ["300", "400", "500", "700", "900"],
   display: "swap",
 });
+import AOSInit from "@/lib/aos";
 
 export const metadata = {
   title: "PawBacker",
@@ -19,18 +20,16 @@ export default function RootLayout({ children }) {
       <head>
         <link
           rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.3/css/all.min.css"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
           integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
           crossOrigin="anonymous"
           referrerPolicy="no-referrer"
         />
         <link rel="shortcut icon" href="/logos/logo.png" type="image/png" />
       </head>
-
       <body className={roboto.className}>
-        <Layout>
-          {children}
-        </Layout>
+        <AOSInit />
+        <Layout>{children}</Layout>
       </body>
     </html>
   );

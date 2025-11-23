@@ -63,7 +63,7 @@ export function AboutUs() {
   return (
     <section id="about" className="py-20 px-10">
       <div className="grid grid-cols-1 lg:grid-cols-2 max-w-6xl mx-auto items-start lg:gap-5">
-        <div className="col-span-1 mx-auto px-4 lg:px-0">
+        <div className="col-span-1 mx-auto px-4 lg:px-0" data-aos="fade-right">
           <Typography variant="h2" color="blue-gray" className="mb-4">
             Get to Know Us
           </Typography>
@@ -81,7 +81,7 @@ export function AboutUs() {
             safe, happy, and loved.
           </Typography>
         </div>
-        <div className="col-span-1 px-4 lg:px-0">
+        <div className="col-span-1 px-4 lg:px-0" data-aos="fade-left">
           {faqData.map((item) => (
             <Accordion
               key={item.id}

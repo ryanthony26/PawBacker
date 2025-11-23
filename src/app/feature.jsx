@@ -42,15 +42,16 @@ export function Features() {
   return (
     <section className="py-28 px-4">
       <div className="container mx-auto mb-20 text-center">
-        <Typography color="blue-gray" className="mb-2 font-bold uppercase">
+        <Typography color="blue-gray" className="mb-2 font-bold uppercase" data-aos="fade-up">
           Your Trusted Pet Companion App
         </Typography>
-        <Typography variant="h1" color="blue-gray" className="mb-4">
+        <Typography variant="h1" color="blue-gray" className="mb-4" data-aos="fade-up">
           Designed for Convenience. Built for Trust.
         </Typography>
         <Typography
           variant="lead"
-          className="mx-auto w-full px-4 !text-gray-500 lg:w-11/12 lg:px-8 "
+          className="mx-auto w-full px-4 !text-gray-500 lg:w-11/12 lg:px-8"
+          data-aos="fade-up"
         >
           PawBacker makes finding loving, verified sitters simple so you can get
           on with your day knowing your pet is happy, safe, and well cared for.

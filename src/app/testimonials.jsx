@@ -36,15 +36,16 @@ export function Testimonials() {
     <section className="px-10 !py-20">
       <div className="container mx-auto">
         <div className="mb-10 flex w-full flex-col items-center">
-          <div className="mb-10 flex h-20 w-20 items-center justify-center rounded-lg bg-main text-white ">
+          <div className="mb-10 flex h-20 w-20 items-center justify-center rounded-lg bg-main text-white " data-aos="fade-up">
             <UserIcon className="h-6 w-6" />
           </div>
-          <Typography variant="h2" color="blue-gray" className="mb-2">
+          <Typography variant="h2" color="blue-gray" className="mb-2" data-aos="fade-up">
             What They Say
           </Typography>
           <Typography
             variant="lead"
             className="mb-10 max-w-3xl text-center !text-gray-600"
+            data-aos="fade-up"
           >
             Discover what our valued clients have to say about their experiences
             with our services. We take pride in delivering exceptional results
