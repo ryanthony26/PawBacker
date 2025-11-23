@@ -9,7 +9,11 @@ function Hero() {
       <header className="grid !min-h-[49rem] bg-main px-8">
         <div className="container mx-auto mt-32 grid h-full w-full grid-cols-1 place-items-center lg:mt-14 lg:grid-cols-2">
           <div className="col-span-1">
-            <Typography variant="h1" color="white" className="mb-4">
+            <Typography
+              variant="h1"
+              color="white"
+              className="mb-4"
+            >
               Find trusted, loving pet sitters anytime, anywhere.
             </Typography>
             <Typography
@@ -21,15 +25,14 @@ function Hero() {
             </Typography>
             <div className="flex flex-col gap-2 md:mb-2 md:w-10/12 md:flex-row">
               <a
-                href="https://www.apple.com/id/app-store/" 
+                href="https://www.apple.com/id/app-store/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="md:w-auto w-full"
               >
                 <Button
                   size="lg"
                   color="white"
-                  className="flex justify-center items-center gap-3"
+                  className="flex justify-center items-center gap-3 w-full"
                 >
                   <Image
                     width={256}
@@ -46,12 +49,11 @@ function Hero() {
                 href="https://play.google.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="md:w-auto w-full"
               >
                 <Button
                   size="lg"
                   color="white"
-                  className="flex justify-center items-center gap-3"
+                  className="flex justify-center items-center gap-3 w-full"
                 >
                   <Image
                     width={256}
@@ -77,7 +79,7 @@ function Hero() {
       <div className="mx-8 lg:mx-16 -mt-24 rounded-xl bg-white p-5 md:p-14 shadow-md">
         <div>
           <Typography variant="h3" color="blue-gray" className="mb-3">
-            Your Pet Deserves the Best Care
+            Trusted Care for Your Best Friend
           </Typography>
           <Typography
             variant="paragraph"

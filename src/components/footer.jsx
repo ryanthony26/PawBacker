@@ -72,11 +72,10 @@ export function Footer() {
                 href="https://www.play.google.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="md:w-auto w-full"
               >
                 <Button
                   color="white"
-                  className="flex items-center justify-center"
+                  className="flex items-center justify-center w-full"
                 >
                   <Image
                     width={256}
