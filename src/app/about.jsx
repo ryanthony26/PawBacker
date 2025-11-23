@@ -81,9 +81,11 @@ export function AboutUs() {
             safe, happy, and loved.
           </Typography>
         </div>
-        <div className="col-span-1 px-4 lg:px-0" data-aos="fade-left">
+        <div className="col-span-1 px-4 lg:px-0">
           {faqData.map((item) => (
             <Accordion
+              data-aos="fade-up"
+              data-aos-delay="500"
               key={item.id}
               open={open === item.id}
               icon={<Icon id={item.id} open={open} />}
