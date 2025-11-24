@@ -99,15 +99,23 @@ export function Footer() {
           </Typography>
 
           <div className="flex gap-2">
-            <IconButton variant="text" color="white">
-              <i className="fa-brands fa-twitter text-2xl not-italic opacity-75"></i>
-            </IconButton>
-            <IconButton variant="text" color="white">
-              <i className="fa-brands fa-instagram text-2xl not-italic opacity-75"></i>
-            </IconButton>
-            <IconButton variant="text" color="white">
-              <i className="fa-brands fa-facebook text-2xl not-italic opacity-75"></i>
-            </IconButton>
+            <a href="https://x.com" target="_blank">
+              <IconButton variant="text" color="white">
+                <i className="fa-brands fa-twitter text-2xl not-italic opacity-75"></i>
+              </IconButton>
+            </a>
+
+            <a href="https://instagram.com" target="_blank">
+              <IconButton variant="text" color="white">
+                <i className="fa-brands fa-instagram text-2xl not-italic opacity-75"></i>
+              </IconButton>
+            </a>
+
+            <a href="https://facebook.com" target="_blank">
+              <IconButton variant="text" color="white">
+                <i className="fa-brands fa-facebook text-2xl not-italic opacity-75"></i>
+              </IconButton>
+            </a>
           </div>
         </div>
       </div>

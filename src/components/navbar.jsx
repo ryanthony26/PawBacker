@@ -88,31 +88,42 @@ export function Navbar() {
           <NavItem href="#about">About</NavItem>
         </ul>
         <div className="hidden gap-2 lg:flex lg:items-center">
-          <IconButton
-            variant="text"
-            className={`${isScrolling ? "text-gray-900" : "text-white"}`}
-            size="md"
-          >
-            <i className="fa-brands fa-twitter text-base"/>
-          </IconButton>
-          <IconButton
-            variant="text"
-            className={`${isScrolling ? "text-gray-900" : "text-white"}`}
-            size="md"
-          >
-            <i className="fa-brands fa-facebook text-base" />
-          </IconButton>
-          <IconButton
-            variant="text"
-            className={`${isScrolling ? "text-gray-900" : "text-white"}`}
-            size="md"
-          >
-            <i className="fa-brands fa-instagram text-base" />
-          </IconButton>
+          <a href="https://x.com" target="_blank">
+            <IconButton
+              variant="text"
+              className={`${isScrolling ? "text-gray-900" : "text-white"}`}
+              size="md"
+            >
+              <i className="fa-brands fa-twitter text-base" />
+            </IconButton>
+          </a>
+
+          <a href="https://facebook.com" target="_blank">
+            <IconButton
+              variant="text"
+              className={`${isScrolling ? "text-gray-900" : "text-white"}`}
+              size="md"
+            >
+              <i className="fa-brands fa-facebook text-base" />
+            </IconButton>
+          </a>
+
+          <a href="https://instagram.com" target="_blank">
+            <IconButton
+              variant="text"
+              className={`${isScrolling ? "text-gray-900" : "text-white"}`}
+              size="md"
+            >
+              <i className="fa-brands fa-instagram text-base" />
+            </IconButton>
+          </a>
+
           <a href="#">
             <Button
               className={`normal-case text-sm ${
-                isScrolling ? "bg-gray-900 text-white" : "bg-white text-gray-900"
+                isScrolling
+                  ? "bg-gray-900 text-white"
+                  : "bg-white text-gray-900"
               }`}
               size="md"
             >
@@ -140,15 +151,23 @@ export function Navbar() {
             <NavItem>About</NavItem>
           </ul>
           <div className="mt-4 flex items-center gap-2">
-            <IconButton variant="text" color="gray" size="sm">
-              <i className="fa-brands fa-twitter text-base" />
-            </IconButton>
-            <IconButton variant="text" color="gray" size="sm">
-              <i className="fa-brands fa-facebook text-base" />
-            </IconButton>
-            <IconButton variant="text" color="gray" size="sm">
-              <i className="fa-brands fa-instagram text-base" />
-            </IconButton>
+            <a href="https://x.com" target="_blank">
+              <IconButton variant="text" color="gray" size="sm">
+                <i className="fa-brands fa-twitter text-base" />
+              </IconButton>
+            </a>
+            <a href="https://facebook.com" target="_blank">
+              <IconButton variant="text" color="gray" size="sm">
+                <i className="fa-brands fa-facebook text-base" />
+              </IconButton>
+            </a>
+
+            <a href="https://instagram.com" target="_blank">
+              <IconButton variant="text" color="gray" size="sm">
+                <i className="fa-brands fa-instagram text-base" />
+              </IconButton>
+            </a>
+
             <a href="#">
               <Button color="gray" size="sm" className="ml-auto normal-case">
                 Get Started!
